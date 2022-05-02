@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+a {
+  color: #01579b;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+a:hover{
+  color: #00b0ff;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.loader {
+  margin: 1rem auto;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
+
+.error {
+  padding: 1rem;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  color: #FFF;
+  background-color: #DC3545;
+}
+
+.header {
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.header > * {
+  margin: 1rem auto;
+}
+
+.form-search {
+  margin: auto;
+  text-align: center;
+}
+
+.form-search input {
+  display: block;
+  margin: auto;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+.grid-fluid {
+  margin: 1rem auto;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3.2rem;
+}
+
+#main {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  background-color: #ECEFF1;
+}
+
+.main p{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 390px) {
+  .main {
+    width: 14.4rem;
+    flex-direction: column;
+  } 
+  
+  .main h2 {
+    text-align: center;
+  }
+
+  .main img {
+    width: 35vh;
+    height: 35vh;
+  }
+
+  .main p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 14.4rem;
+  }
+
+  .main p span {
+    background-color: rgb(44, 225, 238);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+}
+@media only screen and (min-width: 401px) and (max-width: 803px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  } 
+}
